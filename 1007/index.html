@@ -7,10 +7,49 @@
     <style>
         body { font-family: Arial, sans-serif; margin: 40px; background: #f5f5f5; }
         header { color: #222; padding: 10px 0; }
-        main { padding: 10px 0; }
+        main {
+            display: flex;
+            gap: 24px;
+            justify-content: center;
+            align-items: stretch;
+            padding: 10px 0;
+        }
         footer { text-align: center; color: #888; margin-top: 30px; }
-        table { width:100%; border-collapse: collapse; background: #fff; box-shadow: 0 2px 8px #ccc; }
-        td { border:1px solid #ccc; padding:12px; }
+        .gallery-block {
+            flex-direction: row;
+            width: 340px;
+            min-width: 0;
+            display: flex;
+            align-items: center;
+            background: #fff;
+            padding: 16px;
+            margin-bottom: 0;
+        }
+        .gallery-img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            clip-path: polygon(
+                30% 3.1%, 70% 3.1%,
+                96.9% 30%, 96.9% 70%,
+                70% 96.9%, 30% 96.9%,
+                3.1% 70%, 3.1% 30%
+            );
+            margin-right: 24px;
+            flex-shrink: 0;
+        }
+        .gallery-info {
+            flex: 1;
+            color: #222;
+            font-size: 1.05em;
+            line-height: 1.7;
+            text-align: left;
+        }
+        .gallery-title {
+            font-weight: bold;
+            color: #4c7bfc;
+            margin-bottom: 6px;
+        }
     </style>
 </head>
 <body>
@@ -18,36 +57,30 @@
         <h1>我的旅行相片一覽</h1>
     </header>
     <main>
-        <table>
-            <tbody>
-                <tr>
-                    <td>分類</td>
-                    <td>縮圖</td>
-                    <td>標題與描述</td>
-                    <td>拍攝日期</td>
-                </tr>
-                <tr>
-                    <td rowspan="2">城市風景</td>
-                    <td><img src="pic3.jpg" ></td>
-                    <td>海邊夕陽<br>金色的夕陽灑在海面上</td>
-                    <td>2025-09-01</td>
-                </tr>
-                <tr>
-                    <td><img src="pic4.jpg" ></td>
-                    <td>夜空下的咖啡店<br>就像梵谷的畫作一樣</td>
-                    <td>2025-09-03</td>
-                </tr>
-                <tr>
-                    <th colspan="4">海邊旅行</th>
-                </tr>
-                <tr>
-                    <td>自然風景</td>
-                    <td><img src="pic5.jpg" ></td>
-                    <td>日出風光<br>日出照亮山頭</td>
-                    <td>2025-09-10</td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="gallery-block">
+            <img src="pic3.jpg" class="gallery-img" alt="海邊夕陽">
+            <div class="gallery-info">
+                <div class="gallery-title">海邊夕陽</div>
+                金色的夕陽灑在海面上<br>
+                <span style="color:#888; font-size:0.95em;">2025-09-01</span>
+            </div>
+        </div>
+        <div class="gallery-block">
+            <img src="pic4.jpg" class="gallery-img" alt="夜空下的咖啡館">
+            <div class="gallery-info">
+                <div class="gallery-title">夜空下的咖啡館</div>
+                就像梵谷的畫作一樣<br>
+                <span style="color:#888; font-size:0.95em;">2025-09-03</span>
+            </div>
+        </div>
+        <div class="gallery-block">
+            <img src="pic5.jpg" class="gallery-img" alt="日出風光">
+            <div class="gallery-info">
+                <div class="gallery-title">日出風光</div>
+                日出照亮山頭<br>
+                <span style="color:#888; font-size:0.95em;">2025-09-10</span>
+            </div>
+        </div>
     </main>
     <footer>
         <p>&copy; 2025 我的旅行相片網站</p>
