@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首頁</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #f7b6b9 0%, #f7e7b9 50%, #b9e7f7 100%);
+            min-height: 100vh;
+            margin: 0;
+            font-family: 'Segoe UI', '微軟正黑體', Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .floating {
+            position: fixed;
+            z-index: 0;
+            pointer-events: none;
+            opacity: 0.7;
+            animation: float 6s ease-in-out infinite;
+        }
+        .floating2 { animation-delay: 2s; }
+        .floating3 { animation-delay: 4s; }
+        @keyframes float {
+            0% { transform: translateY(0) scale(1); }
+            50% { transform: translateY(-40px) scale(1.1); }
+            100% { transform: translateY(0) scale(1); }
+        }
+        h1, p {
+            position: relative;
+            z-index: 1;
+            font-family: 'Segoe UI', '微軟正黑體', Arial, sans-serif;
+        }
+        h1 {
+            color: #ffb6b9;
+            background: #fff0f5;
+            padding: 16px 32px;
+            border-radius: 24px;
+            box-shadow: 0 2px 8px #f8bbd0;
+            margin-bottom: 16px;
+        }
+        p {
+            color: #6ec6ca;
+            background: #e0f7fa;
+            padding: 12px 24px;
+            border-radius: 16px;
+            box-shadow: 0 1px 4px #b2ebf2;
+        }
+    </style>
+</head>
+<body>
+    <svg class="floating" width="48" height="48" style="left:10vw; top:20vh;" viewBox="0 0 48 48">
+        <circle cx="24" cy="24" r="20" fill="#ffb6b9"/>
+    </svg>
+    <svg class="floating floating2" width="36" height="36" style="left:80vw; top:60vh;" viewBox="0 0 36 36">
+        <rect x="6" y="6" width="24" height="24" rx="8" fill="#fff9c4"/>
+    </svg>
+    <svg class="floating floating3" width="40" height="40" style="left:60vw; top:10vh;" viewBox="0 0 40 40">
+        <ellipse cx="20" cy="20" rx="16" ry="10" fill="#b2ebf2"/>
+    </svg>
+    <h1>歡迎來到首頁</h1>
+    <p>這是您的 index.html 頁面。</p>
+</body>
+</html>
