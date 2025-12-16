@@ -8,13 +8,13 @@
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
   <style>
-      body {
-        background: #fff;
-        min-height: 100vh;
-      }
+    body {
+      background: #fff;
+      min-height: 100vh;
+    }
 
     header.w3-container {
-      background: linear-gradient(90deg, #e7c6ff 60%, #c8b6ff 100%);
+      background: #bde0fe;
       border-radius: 0 0 32px 32px;
       box-shadow: 0 4px 24px rgba(200, 182, 255, 0.12);
       color: #222;
@@ -74,68 +74,125 @@ and is wrapped around the whole page content, except for the footer in this exam
         </div>
         <div class="w3-col m5 intro-photo" style="text-align:center">
           <img src="images/avatar.jpg" alt="個人照片"
-        style="max-width:220px;border-radius:16px;box-shadow:0 2px 12px rgba(0,0,0,0.08);">
+            style="max-width:220px;border-radius:16px;box-shadow:0 2px 12px rgba(0,0,0,0.08);">
           <p class="hint">請將個人照片放在 images/avatar.jpg</p>
         </div>
       </section>
 
       <!-- 作品集 -->
 
-        <!-- 作品集區塊：直向排列，左圖右文 -->
-        <section class="w3-margin-bottom" id="portfolio">
-          <div class="w3-card-4 w3-white w3-margin-bottom" style="display:flex;align-items:center;gap:32px;padding:20px;">
-              <a href="http://Fei0307.github.io/0930/" target="_blank" style="flex:1;display:block;">
-                <img src="image0930.png" alt="0930首頁照片" style="width:100%;max-width:100%;border-radius:12px;object-fit:cover;aspect-ratio:3/2;">
-            </a>
-            <div style="flex:1;">
-              <h4>唐詩三百首</h4>
-              <p>這裡可以放作品簡介或描述。</p>
-              
+      <!-- 作品集區塊：三個一橫排，圖片在上說明在下 -->
+      <section class="w3-margin-bottom" id="portfolio">
+        <div class="w3-row-padding">
+          <div class="w3-third">
+            <div class="w3-card-4 w3-white w3-margin-bottom"
+              style="padding:20px;display:flex;flex-direction:column;align-items:center;">
+              <a href="https://sites.google.com/stu.ntue.edu.tw/feita/%E9%A6%96%E9%A0%81" target="_blank" style="width:100%;display:block;">
+                <img src="imagegoogle1.png" alt="作品A首頁照片"
+                  style="width:100%;max-width:100%;border-radius:12px;object-fit:cover;aspect-ratio:3/2;">
+              </a>
+              <div style="width:100%;text-align:center;margin-top:16px;">
+                <h4>第一次做網頁</h4>
+                <p>這是課堂中做的第一個作品，也是我第一次製作網站。<br>我們是使用Google Site來製作介紹自己的網頁。</p>
+              </div>
             </div>
           </div>
-          <div class="w3-card-4 w3-white w3-margin-bottom" style="display:flex;align-items:center;gap:32px;padding:20px;">
-              <a href="http://Fei0307.github.io/1007/" target="_blank" style="flex:1;display:block;">
-                <img src="image1007.png" alt="1007首頁照片" style="width:100%;max-width:100%;border-radius:12px;object-fit:cover;aspect-ratio:3/2;">
-            </a>
-            <div style="flex:1;">
-              <h4>我的旅行相片一覽</h4>
-              <p>這裡可以放作品簡介或描述。</p>
-              
+          <div class="w3-third">
+            <div class="w3-card-4 w3-white w3-margin-bottom"
+              style="padding:20px;display:flex;flex-direction:column;align-items:center;">
+              <a href="https://sites.google.com/stu.ntue.edu.tw/1125/%E9%A6%96%E9%A0%81" target="_blank" style="width:100%;display:block;">
+                <img src="imagegoogle2.png" alt="作品B首頁照片"
+                  style="width:100%;max-width:100%;border-radius:12px;object-fit:cover;aspect-ratio:3/2;">
+              </a>
+              <div style="width:100%;text-align:center;margin-top:16px;">
+                <h4>團隊合作</h4>
+                <p>接近學期末，我們利用一開始使用的Google Site來完成團隊合作，挑戰在時間內製作出耶誕晚會說明網頁。<br>除了要有效率，也要思考如何將資訊呈現清楚。</p>
+              </div>
             </div>
           </div>
-          <div class="w3-card-4 w3-white w3-margin-bottom" style="display:flex;align-items:center;gap:32px;padding:20px;">
-              <a href="http://Fei0307.github.io/1014/" target="_blank" style="flex:1;display:block;">
-                <img src="image1014.png" alt="1014首頁照片" style="width:100%;max-width:100%;border-radius:12px;object-fit:cover;aspect-ratio:3/2;">
-            </a>
-            <div style="flex:1;">
-              <h4>個人名片</h4>
-              <p>這裡可以放作品簡介或描述。</p>
-              
+          <div class="w3-third">
+            <div class="w3-card-4 w3-white w3-margin-bottom"
+              style="padding:20px;display:flex;flex-direction:column;align-items:center;">
+              <a href="http://Fei0307.github.io/0930/" target="_blank" style="width:100%;display:block;">
+                <img src="image0930.png" alt="0930首頁照片"
+                  style="width:100%;max-width:100%;border-radius:12px;object-fit:cover;aspect-ratio:3/2;">
+              </a>
+              <div style="width:100%;text-align:center;margin-top:16px;">
+                <h4>唐詩三百首</h4>
+                <p>練習使用table、tr、td的功能製作表格。</p>
+              </div>
             </div>
           </div>
-          <div class="w3-card-4 w3-white w3-margin-bottom" style="display:flex;align-items:center;gap:32px;padding:20px;">
-              <a href="http://Fei0307.github.io/1118/" target="_blank" style="flex:1;display:block;">
-                <img src="image1118.png" alt="1118首頁照片" style="width:100%;max-width:100%;border-radius:12px;object-fit:cover;aspect-ratio:3/2;">
-            </a>
-            <div style="flex:1;">
-              <h4>競賽實施辦法</h4>
-              <p>這裡可以放作品簡介或描述。</p>
-              
+        </div>
+        <div class="w3-row-padding">
+          <div class="w3-third">
+            <div class="w3-card-4 w3-white w3-margin-bottom"
+              style="padding:20px;display:flex;flex-direction:column;align-items:center;">
+              <a href="http://Fei0307.github.io/1007/" target="_blank" style="width:100%;display:block;">
+                <img src="image1007.png" alt="1007首頁照片"
+                  style="width:100%;max-width:100%;border-radius:12px;object-fit:cover;aspect-ratio:3/2;">
+              </a>
+              <div style="width:100%;text-align:center;margin-top:16px;">
+                <h4>我的旅行相片一覽</h4>
+                <p>這裡可以放作品簡介或描述。</p>
+              </div>
             </div>
           </div>
-          <div class="w3-card-4 w3-white w3-margin-bottom" style="display:flex;align-items:center;gap:32px;padding:20px;">
+          <div class="w3-third">
+            <div class="w3-card-4 w3-white w3-margin-bottom"
+              style="padding:20px;display:flex;flex-direction:column;align-items:center;">
+              <a href="http://Fei0307.github.io/1014/" target="_blank" style="width:100%;display:block;">
+                <img src="image1014.png" alt="1014首頁照片"
+                  style="width:100%;max-width:100%;border-radius:12px;object-fit:cover;aspect-ratio:3/2;">
+              </a>
+              <div style="width:100%;text-align:center;margin-top:16px;">
+                <h4>個人名片</h4>
+                <p>這裡可以放作品簡介或描述。</p>
+              </div>
+            </div>
+          </div>
+          <div class="w3-third">
+            <div class="w3-card-4 w3-white w3-margin-bottom"
+              style="padding:20px;display:flex;flex-direction:column;align-items:center;">
+              <a href="http://Fei0307.github.io/1118/" target="_blank" style="width:100%;display:block;">
+                <img src="image1118.png" alt="1118首頁照片"
+                  style="width:100%;max-width:100%;border-radius:12px;object-fit:cover;aspect-ratio:3/2;">
+              </a>
+              <div style="width:100%;text-align:center;margin-top:16px;">
+                <h4>競賽實施辦法</h4>
+                <p>這裡可以放作品簡介或描述。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w3-row-padding">
+          <div class="w3-col" style="width:100%;">
+            <div class="w3-card-4 w3-white w3-margin-bottom" style="padding:20px;display:flex;align-items:center;gap:32px;">
               <a href="http://Fei0307.github.io/1021/" target="_blank" style="flex:1;display:block;">
                 <img src="image1021.png" alt="1021首頁照片" style="width:100%;max-width:100%;border-radius:12px;object-fit:cover;aspect-ratio:3/2;">
-            </a>
-            <div style="flex:1;">
-              <h4>idol introduce</h4>
-              <p>這裡可以放作品簡介或描述。</p>
-              
+              </a>
+              <div style="flex:1;">
+                <h4>idol introduce</h4>
+                <p>這裡可以放作品簡介或描述。</p>
+              </div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
       <!-- Footer -->
+      <footer class="w3-container w3-center w3-padding-32"
+        style="background:#bde0fe;color:#222;border-radius:24px 24px 0 0;margin-top:40px;box-shadow:0 -2px 12px rgba(200,182,255,0.10);">
+        <h5 style="font-weight:bold;letter-spacing:0.05em;">關於我</h5>
+        <p style="margin:0.5em 0;">姓名：鍾誼霏</p>
+        <p style="margin:0.5em 0;">學號：111415004</p>
+        <p style="margin:0.5em 0;">就讀科系：國立臺北教育大學 藝術與造形設計學系 設計組</p>
+        <p style="margin:0.5em 0;">Email：<a href='mailto:s111415004@stu.ntue.edu.tw'
+            style="color:#6c3483;text-decoration:underline;">s111415004@stu.ntue.edu.tw</a></p>
+        <p style="margin:0.5em 0;">© 2025 鍾誼霏. All rights reserved.</p>
+      </footer>
+    </div>
+    <!-- end w3-content -->
   </body>
 
 </html>
